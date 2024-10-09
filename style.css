@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-/* .attribution {
-  font-size: 11px;
+.attribution {
+  font-size: 9px;
   text-align: center;
+  position: absolute;
+  bottom: 3%;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
-} */
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+  font-weight: bold;
+ 
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -21,43 +26,47 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+/* #container{
+ height: 95%;
+} */
 
 .qr_code {
     width: 90%;
     height: auto;
-    position: absolute;
-    top: 3.5%;
     border-radius: 10px;
 }
 
 .inner_box {
     background-color: white;
-    width: 18%;
-    height: 58vh;
+    padding-top: 1.1rem;
+    padding-bottom: 3rem;
+    min-width: 300px;
+    min-height: 500px;
+    max-width: 340px;
     border-radius: 20px;
-    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: ;
 }
-
 .text_box {
     text-align: center;
-    position: absolute;
     bottom: 5%;
     margin: 0px 20px;
     height: 35%;
 }
 
 #first_text {
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 700;
-    padding-top: 32px;
+    padding-top: 28px;
     color:  hsl(218, 44%, 22%);
 }
 
 #second_text {
-    font-size: 16.5px;
+    font-size: 16px;
     font-weight: 400;
     color: hsl(218, 44%, 22%);
     padding-top: 20px;
